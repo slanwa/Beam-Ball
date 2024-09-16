@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beam Ball Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu for starting game, quitting, and accessing the shop -->
+    <div id="menu">
+        <h1>Ball Shooter Game</h1>
+        <button id="newGameButton">New Game</button>
+        <button id="shopButton">Shop</button>
+        <button id="quitButton">Quit</button>
+    </div>
+
+    <!-- Game Container -->
+    <div id="gameContainer" style="display: none;">
+        <div id="scoreBoard">Score: 0 | Points: 0</div>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <!-- Shop Menu -->
+    <div id="shopMenu" style="display: none;">
+        <h2>Shop</h2>
+        <div id="shopPoints">Points: 0</div>
+        <button data-shape="circle">Circle Beam (50 Points)</button>
+        <button data-shape="star">Star Beam (50 Points)</button>
+        <button data-shape="square">Square Beam (50 Points)</button>
+        <button data-shape="triangle">Triangle Beam (50 Points)</button>
+        <button id="backButton">Back to Menu</button>
+    </div>
+
+    <!-- Points Display -->
+    <div id="pointsDisplay" style="display: none;">
+        <h2>Total Points: <span id="totalPoints">0</span></h2>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

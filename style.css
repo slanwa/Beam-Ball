@@ -1,0 +1,58 @@
+/* General Styling */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+   
+    background-color: #282c34;
+}
+
+#gameContainer {
+    position: relative;
+}
+
+#gameCanvas {
+    border: 3px solid black;
+    background: linear-gradient(to bottom right, #4facfe, #00f2fe); /* Blue-violet gradient background */
+}
+
+/* Menu and Shop Styling */
+#menu, #shopMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    background-color: #282c34;
+    color: white;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #444;
+}
+
+#shopPoints {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Points Display Styling */
+#pointsDisplay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+}
